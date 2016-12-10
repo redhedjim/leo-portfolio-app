@@ -1,24 +1,141 @@
-.App {
+/*
+*IntroSection
+*/
+.intro-container {
+   background-image: url('./images/Elegant_Background-3.jpg');
+   color:black;
+   height: 100vh;
+   width: 100vw;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   flex-flow: space-around;
+}
+.intro-text-container {
+   margin-top: auto;
+   /* border: 1px solid black;*/
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   flex-flow: space-around;
+}
+h1, h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3em
+}
+p {
+  font-family: 'Cantarell', sans-serif;
+}
+.intro-text {
+  width:30vw;
+    /* border: 1px solid black;*/
+
+}
+.intro-menu {
+  margin-top: auto;
+  /* border: 1px solid black;*/
+  width:60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: space-between;
+}
+ul {
+  list-style: none;
+  /* border: 1px solid black;*/
+  display: flex;
+  flex:1;
+}
+li {
+  /* border: 1px solid black;*/
+  flex: 1;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+li a {
   color: white;
+  text-decoration: none;
+  font-size: 125%;
+}
+li a:hover {
+  color: skyblue;
 }
 
-.App-intro {
-  font-size: large;
+/*
+*ProjectSection
+*/
+.project-container {
+   background-color: #3B3A35;
+   color:white;
+   height: 100vh;
+   width: 100vw;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.project-text-container {
+   width:30vw;    
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 }
+
+/*
+*ResumeSection
+*/
+
+.resume-container {
+   background-image: url('./images/Elegant_Background-5.jpg');
+   /*background-color: #FB6648;*/
+   color:white;
+   height: 100vh;
+   width: 100vw;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+/*
+*ContactSection
+*/
+
+.contact-container {
+   background-color: #5E3448;
+   color:white;
+   height: 100vh;
+   width: 100vw;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
