@@ -4,6 +4,7 @@ import MainPage from './pages/mainPage/mainPage';
 
 class App extends Component {
   render() {
+    
     return (
       <MainPage />
     );
