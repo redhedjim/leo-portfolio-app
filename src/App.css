@@ -1,8 +1,10 @@
 /*
 *IntroSection
 */
+
 .intro-container {
    background-image: url('./images/Elegant_Background-3.jpg');
+   background-size:cover;
    color:black;
    height: 100vh;
    width: 100vw;
@@ -35,6 +37,15 @@ h1, h2 {
 }
 p {
   font-family: 'Cantarell', sans-serif;
+  opacity:1;
+}
+.project-name {
+  font-size: 2.5em;
+  font-family: 'Fjalla One', sans-serif;
+}
+.project-description {
+  font-family: 'Cantarell', sans-serif;
+  color: white;
 }
 .intro-text {
   width:30vw;
@@ -51,6 +62,7 @@ p {
   flex-flow: space-between;
 }
 ul {
+  padding:0px;
   list-style: none;
   /* border: 1px solid black;*/
   display: flex;
@@ -73,31 +85,21 @@ li a:hover {
 /*
 *ProjectSection
 */
-.project-container {
-   background-color: #3B3A35;
-   color:white;
-   height: 100vh;
-   width: 100vw;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-}
 
-.project-text-container {
-   width:30vw;    
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column; /* works with row or column */
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
+.project-container{
+  background-image: url("./images/dark-wood.jpg");
+  background-size: cover;
+  color:white;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column; /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 /*
@@ -106,6 +108,7 @@ li a:hover {
 
 .resume-container {
    background-image: url('./images/Elegant_Background-5.jpg');
+   background-size:cover;
    /*background-color: #FB6648;*/
    color:white;
    height: 100vh;

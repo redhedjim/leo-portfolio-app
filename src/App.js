@@ -3,8 +3,7 @@ import './App.css';
 import MainPage from './pages/mainPage/mainPage';
 
 class App extends Component {
-  render() {
-    
+  render() {   
     return (
       <MainPage />
     );
