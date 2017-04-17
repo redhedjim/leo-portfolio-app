@@ -3,33 +3,74 @@
 */
 
 .intro-container {
-   background-image: url('./images/Elegant_Background-3.jpg');
-   background-size:cover;
+   background-image: url('./images/asfalt-dark.png');
    color:black;
    height: 100vh;
    width: 100vw;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row; /* works with row or column */
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   flex-flow: space-around;
+  
 }
-.intro-text-container {
-   margin-top: auto;
-   /* border: 1px solid black;*/
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row; /* works with row or column */
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   flex-flow: space-around;
+.intro{
+  display: flex;
+  min-width: 100%;
+  height: 90%
+}
+.intro-left{
+  display: flex;
+  flex:3;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align:left;
+  color: black;
+  flex:1;
+  max-height: 100%;
+  height: 100%;
+  font-size: 6em; 
+  font-weight: 900;
+  padding-left: 5%;
+  overflow: hidden;
+}
+.intro-flex div{
+  flex:1;
+  height:100%;
+}
+.intro-right {
+  text-align: center; 
+  height: 100%;
+  flex:2;
+  margin-top: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column; /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-flow: space-around;
+}
+.intro h1{
+  font-size:5.5em;
+}
+
+.intro-text {
+  width:80%;
+  font-size: 1.3em;
+    /* border: 1px solid black;*/
+
+}
+.intro-menu {
+  margin-top: auto;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: space-between;
+}
+.intro-menu a{
+  color: red;
+  text-decoration: none;
+
 }
 h1, h2 {
   font-family: 'Fjalla One', sans-serif;
@@ -38,28 +79,6 @@ h1, h2 {
 p {
   font-family: 'Cantarell', sans-serif;
   opacity:1;
-}
-.project-name {
-  font-size: 2.5em;
-  font-family: 'Fjalla One', sans-serif;
-}
-.project-description {
-  font-family: 'Cantarell', sans-serif;
-  color: white;
-}
-.intro-text {
-  width:30vw;
-    /* border: 1px solid black;*/
-
-}
-.intro-menu {
-  margin-top: auto;
-  /* border: 1px solid black;*/
-  width:60vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-flow: space-between;
 }
 ul {
   padding:0px;
@@ -87,8 +106,7 @@ li a:hover {
 */
 
 .project-container{
-  background-image: url("./images/dark-wood.jpg");
-  background-size: cover;
+  /*background: linear-gradient(to bottom, black, lightgrey);*/
   color:white;
   height: 100vh;
   width: 100vw;
@@ -101,12 +119,72 @@ li a:hover {
   -webkit-justify-content: center;
   justify-content: center;
 }
+.header{
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
+  height: 60vh;
+  text-align: center;
+  /*background: linear-gradient(lightgrey, black);*/
+  background: linear-gradient(black, lightgrey);
+  color:grey;
+  font-size: 2.4em;
+}
+.header h2{
+  margin: 0;
+}
+.project-card{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /*background: linear-gradient( #474def, #4d53f2, #363aaf);*/
+    background-image: url('./images/Elegant_Background-3.jpg');
+  background-size:cover;
+
+  color:black;
+}
+.project-name {
+  font-size: 2.5em;
+  font-family: 'Fjalla One', sans-serif;
+}
+.project-description {
+  font-family: 'Cantarell', sans-serif;
+  color: white;
+}
+
+.project-overview{
+  flex: 1;
+  border-right: 2px solid white;
+}
+.project-details{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid white;*/
+}
+.project-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.project-image img{ 
+  max-width: 75%;
+}
+.project-item{
+  /*border: 1px solid black;*/
+  padding: 0 10px 0 10px;
+  flex:1;
+}
+.item-details{
+  padding: 0 10px 0 10px;
+}
 
 /*
 *ResumeSection
 */
 
-.resume-container {
+.resume-card {
    background-image: url('./images/Elegant_Background-5.jpg');
    background-size:cover;
    /*background-color: #FB6648;*/
@@ -127,10 +205,10 @@ li a:hover {
 *ContactSection
 */
 
-.contact-container {
+.contact-card {
    background-color: #5E3448;
    color:white;
-   height: 100vh;
+   height: 50vh;
    width: 100vw;
    display: -webkit-flex;
    display: flex;
@@ -151,10 +229,6 @@ li a:hover {
   justify-content: center;
   text-align: center;
 }
-h2#contact-header{
-
-}
-
 #contact-body{
   width:100%;
   flex: 2;
