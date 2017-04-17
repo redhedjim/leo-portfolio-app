@@ -208,7 +208,7 @@ li a:hover {
 .contact-card {
    background-color: #5E3448;
    color:white;
-   height: 50vh;
+   height: 40vh;
    width: 100vw;
    display: -webkit-flex;
    display: flex;
@@ -252,4 +252,7 @@ li a:hover {
 img.social-media-icon{
   max-height: 100px;
   max-width: 100px;
+}
+.contact-text p{
+  color: black;
 }
