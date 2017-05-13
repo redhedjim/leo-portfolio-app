@@ -3,7 +3,7 @@ import React from 'react';
 const IntroSection = () => {
   const introTextArray = [
     `By day I am a full-stack software developer and project manager. I help people turn their imagination into something
-    tangible. Web pages, applications and consulting all fall within my wheel house. 
+    they can show off. Web pages, applications, consulting... all that jazz. 
     `,
     
     `Whether I'm working with Javascript, Ruby or PHP I enjoy making things that are fun and challenging. 
@@ -17,7 +17,7 @@ const IntroSection = () => {
 
   const intro = introTextArray.map((paragraph, id) => <p key={id} className="intro-text text-center">{paragraph}</p>)
   return (
-    <div id="intro-top" className="intro-container">
+    <div id="intro-top" className="intro-container section">
       <div className="intro">
         <div className="intro-left">
           <div></div>
